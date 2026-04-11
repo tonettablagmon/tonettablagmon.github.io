@@ -1,50 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Name | AML Data Scientist</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-top: 30px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Your Name | AML & Data Science Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #1f2a37;
+    }
+
+    /* NAV */
+    nav {
+        background: #111827;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* SECTION */
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    h2 {
+        border-left: 5px solid #3b82f6;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* PROJECTS */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .tag {
+        display: inline-block;
+        background: #e0ecff;
+        color: #1d4ed8;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 14px;
+        color: #6b7280;
+    }
+</style>
 </head>
 
 <body>
 
-<h1>Your Name</h1>
-<p><b>Aspiring Data Scientist | AML & Fraud Analytics</b></p>
+<!-- NAV -->
+<nav>
+    <div><b>Your Name</b></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </div>
+</nav>
 
-<div class="section">
-<h2>About Me</h2>
-<p>
-I build data-driven solutions to detect financial crime, reduce false positives, 
-and improve AML investigation efficiency.
-</p>
+<!-- HERO -->
+<div class="hero">
+    <h1>Your Name</h1>
+    <p>AML & Fraud Data Scientist | Python • SQL • XGBoost • Tableau • R</p>
 </div>
 
-<div class="section">
-<h2>Projects</h2>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an aspiring data scientist focused on Anti-Money Laundering (AML), fraud detection,
+        and financial risk analytics. I build machine learning models and analytics solutions
+        to reduce false positives, improve alert triage, and support compliance teams.
+    </p>
+</section>
 
-<h3>AML Alert Risk Scoring Model</h3>
-<p>Used XGBoost to predict suspicious alerts and reduce false positives.</p>
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
 
-<h3>Transaction Pattern Detection (SQL)</h3>
-<p>Identified structuring behavior using SQL queries.</p>
+    <div class="grid">
 
-</div>
+        <div class="card">
+            <h3>AML Alert Risk Scoring Model</h3>
+            <p>XGBoost model to identify high-risk AML alerts and reduce false positives.</p>
+            <span class="tag">Python • XGBoost</span>
+        </div>
 
-<div class="section">
-<h2>Skills</h2>
-<p>SQL | Python | XGBoost | Tableau | R | Excel</p>
-</div>
+        <div class="card">
+            <h3>Transaction Pattern Detection</h3>
+            <p>SQL-based analysis identifying structuring and suspicious transaction behavior.</p>
+            <span class="tag">SQL</span>
+        </div>
+
+        <div class="card">
+            <h3>AML Executive Dashboard</h3>
+            <p>Tableau dashboard tracking alerts, SAR trends, and risk exposure.</p>
+            <span class="tag">Tableau</span>
+        </div>
+
+        <div class="card">
+            <h3>Time-to-Resolution Model</h3>
+            <p>Predicts AML alert resolution time to improve SLA compliance.</p>
+            <span class="tag">Python • XGBoost</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <p>
+        SQL • Python • XGBoost • Pandas • Scikit-learn • Tableau • R • Excel • Data Visualization • Risk Analytics
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Your Name | Built with GitHub Pages
+</footer>
 
 </body>
 </html>
