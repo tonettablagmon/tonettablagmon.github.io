@@ -4,11 +4,12 @@
   border-radius: 16px;
   padding: 22px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition: all 0.35s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.35s ease;
+  border-left: 4px solid #007bff;
 }
 
 /* ===== MODERN HOVER EFFECT ===== */
@@ -35,7 +36,6 @@
   transition: all 0.6s ease;
 }
 
-/* animate shine on hover */
 .aml-project:hover::before {
   left: 120%;
 }
@@ -60,9 +60,12 @@ body {
   font-family: Arial, sans-serif;
   background: #f8f9fb;
 }
-* {
-  transition: all 0.2s ease-in-out;
+.aml-project h3 {
+  margin-top: 0;
+  color: #111;
 }
-.aml-project {
-  border-left: 4px solid #007bff;
+
+.aml-project p {
+  color: #444;
+  line-height: 1.6;
 }
