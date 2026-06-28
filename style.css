@@ -1,5 +1,5 @@
 /* ===== BASE CARD ===== */
-.card {
+.aml-project {
   background: #ffffff;
   border-radius: 16px;
   padding: 22px;
@@ -12,14 +12,14 @@
 }
 
 /* ===== MODERN HOVER EFFECT ===== */
-.card:hover {
+.aml-project:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
   border-color: rgba(0, 123, 255, 0.4);
 }
 
 /* ===== SOFT GRADIENT SHINE EFFECT ===== */
-.card::before {
+.aml-project::before {
   content: "";
   position: absolute;
   top: 0;
@@ -36,12 +36,12 @@
 }
 
 /* animate shine on hover */
-.card:hover::before {
+.aml-project:hover::before {
   left: 120%;
 }
 
 /* ===== SUBTLE INNER BORDER GLOW ===== */
-.card::after {
+.aml-project::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -53,7 +53,7 @@
   pointer-events: none;
 }
 
-.card:hover::after {
+.aml-project:hover::after {
   opacity: 1;
 }
 body {
